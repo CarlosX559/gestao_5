@@ -322,6 +322,53 @@ header {
             display: flex;
             justify-content: center;
             align-items: center;
+            width: 100%;
+
+            .swiper_2 {
+                width: 100%;
+                max-width: 1200px;
+                overflow-y: visible;
+
+                .swiper-pagination {
+                    bottom: -40px;
+
+                    .swiper-pagination-bullet {
+                        background-color: #136FB1 !important;
+                    }
+                }
+
+                .swiper-wrapper {
+
+                    .swiper-slide {
+                        display: flex !important;
+                        justify-content: center;
+                        align-items: center;
+
+                        .box_container_2 {
+                            width: 100%;
+                            max-width: 260px;
+                            background: #065BA9;
+                            border-radius: 24px 0px 24px 24px;
+
+                            .box_container_2_int {
+                                display: flex;
+                                align-items: center;
+                                gap: 20px;
+                                padding: 15px;
+
+                                .info_container_2 {
+                                    p {
+                                        font-family: 'Gilroy-SemiBold';
+                                        font-weight: 600;
+                                        font-size: 1.4em;
+                                        color: #FFFFFF;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
 
         }
     }

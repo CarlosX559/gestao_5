@@ -175,22 +175,96 @@
             <div class="area_container_2">
 
 
-                    <!-- Slider main container -->
-                    <div class="swiper_2 swiper">
-                        <!-- Additional required wrapper -->
-                        <div class="swiper-wrapper">
-                            <!-- Slides -->
-                            <div class="swiper-slide">
-                              
+                <!-- Slider main container -->
+                <div class="swiper_2 swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="box_container_2">
+                                <div class="box_container_2_int">
+                                    <img src="img/asterisk.svg" alt="">
+                                    <div class="info_container_2">
+                                        <p>
+                                            Logo do cliente
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
-                       
-    
                         </div>
-                        <!-- If we need pagination -->
-                        <div class="swiper-pagination"></div>
-    
+
+                        <div class="swiper-slide">
+                            <div class="box_container_2">
+                                <div class="box_container_2_int">
+                                    <img src="img/asterisk.svg" alt="">
+                                    <div class="info_container_2">
+                                        <p>
+                                            Logo do cliente
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="box_container_2">
+                                <div class="box_container_2_int">
+                                    <img src="img/asterisk.svg" alt="">
+                                    <div class="info_container_2">
+                                        <p>
+                                            Logo do cliente
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="box_container_2">
+                                <div class="box_container_2_int">
+                                    <img src="img/asterisk.svg" alt="">
+                                    <div class="info_container_2">
+                                        <p>
+                                            Logo do cliente
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="box_container_2">
+                                <div class="box_container_2_int">
+                                    <img src="img/asterisk.svg" alt="">
+                                    <div class="info_container_2">
+                                        <p>
+                                            Logo do cliente
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="box_container_2">
+                                <div class="box_container_2_int">
+                                    <img src="img/asterisk.svg" alt="">
+                                    <div class="info_container_2">
+                                        <p>
+                                            Logo do cliente
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
                     </div>
-       
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                </div>
+
             </div>
         </div>
     </div>
@@ -954,20 +1028,19 @@
                 clickable: true,
             },
 
-            freeMode: {
-                enabled: false,
-                sticky: true,
-            },
-            /*autoplay: {
-                delay: 7000,
+            loop: true,
+            autoplay: {
+                delay: 0,
                 disableOnInteraction: false,
                 pauseOnMouseEnter: true,
-            },*/
+            },
             spaceBetween: 30,
             centeredSlides: false,
-            loop: true,
-            slidesPerView: 3,
 
+            slidesPerView: 4,
+            stopOnLastSlide: false,
+            loopedSlides: 10,
+            speed: 3000,
 
             breakpoints: {
                 // when window width is >= 320px
@@ -993,11 +1066,7 @@
             },
 
 
-            // Navigation arrows
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
+
 
         });
 
