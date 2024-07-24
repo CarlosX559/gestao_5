@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestão 5.6</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css//swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
@@ -176,7 +176,7 @@
 
 
                 <!-- Slider main container -->
-                <div class="swiper_2 swiper">
+                <div class="swiper_1 swiper mx-0 ml-0 p-0 relative overflow-hidden transition-opacity h-8">
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
                         <!-- Slides -->
@@ -657,7 +657,7 @@
 
 
                 <!-- Slider main container -->
-                <div class="swiper_1 swiper">
+                <div class="swiper_2 swiper mx-0 ml-0 p-0 relative overflow-hidden transition-opacity h-8">
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
                         <!-- Slides -->
@@ -961,6 +961,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script>
+
         const swiper_1 = new Swiper('.swiper_1', {
             // Optional parameters
             direction: 'horizontal',
@@ -971,10 +972,54 @@
                 clickable: true,
             },
 
-            freeMode: {
-                enabled: false,
-                sticky: true,
+            loop: true,
+            autoplay: {
+                delay: 0,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: true,
             },
+            centeredSlides: false,
+            
+            slidesPerView: 4,
+            stopOnLastSlide: false,
+            loopedSlides: 10,
+            speed: 3000,
+
+            breakpoints: {
+                // when window width is >= 320px
+                320: {
+                    slidesPerView: 'auto',
+
+                },
+                // when window width is >= 480px
+                480: {
+                    slidesPerView: 'auto',
+                },
+                // when window width is >= 640px
+                640: {
+                    slidesPerView: 3,
+                },
+                // when window width is >= 1024px
+                1024: {
+                    slidesPerView: 4,
+                },
+                1440: {
+                    slidesPerView: 4,
+                }
+            },
+
+        });
+
+        const swiper_2 = new Swiper('.swiper_2', {
+            // Optional parameters
+            direction: 'horizontal',
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+
             /*autoplay: {
                 delay: 7000,
                 disableOnInteraction: false,
@@ -1015,58 +1060,6 @@
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
             },
-
-        });
-
-        const swiper_2 = new Swiper('.swiper_2', {
-            // Optional parameters
-            direction: 'horizontal',
-
-            // If we need pagination
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-
-            loop: true,
-            autoplay: {
-                delay: 0,
-                disableOnInteraction: false,
-                pauseOnMouseEnter: true,
-            },
-            spaceBetween: 30,
-            centeredSlides: false,
-
-            slidesPerView: 4,
-            stopOnLastSlide: false,
-            loopedSlides: 10,
-            speed: 3000,
-
-            breakpoints: {
-                // when window width is >= 320px
-                320: {
-                    slidesPerView: 'auto',
-
-                },
-                // when window width is >= 480px
-                480: {
-                    slidesPerView: 'auto',
-                },
-                // when window width is >= 640px
-                640: {
-                    slidesPerView: 3,
-                },
-                // when window width is >= 1024px
-                1024: {
-                    slidesPerView: 4,
-                },
-                1440: {
-                    slidesPerView: 4,
-                }
-            },
-
-
-
 
         });
 
