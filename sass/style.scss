@@ -1,5 +1,6 @@
 * {
     font-family: 'Gilroy';
+    scroll-behavior: smooth;
 }
 
 body {
@@ -145,6 +146,14 @@ header {
     border-radius: 10px;
 }
 
+%btn_principal_2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: none;
+}
+
 #container_1 {
     display: flex;
     justify-content: center;
@@ -225,13 +234,14 @@ header {
                         max-width: 450px;
                         background: rgba(3, 82, 154, 0.6);
                         border-radius: 24px 0px 0px 24px;
-                        padding: 30px;
+
                         margin-left: -60px;
 
                         .area_text_container_1_int {
                             display: flex;
                             flex-direction: column;
                             gap: 20px;
+                            padding: 30px;
 
                             .area_info_container_1 {
                                 display: flex;
@@ -447,7 +457,7 @@ header {
 
                 .bg_segmentos {
                     max-width: max-content;
-                    width: inherit;
+                    width: 100%;
                     height: auto;
                 }
 
@@ -889,14 +899,221 @@ header {
 
 
 
+.container_6 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 60px 0px 60px 0px;
+
+    .container_6_int {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 1280px;
+
+        .area_container_6 {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+
+            .area_text_container_6 {
+                display: flex;
+                flex-direction: column;
+                gap: 60px;
+                max-width: 700px;
+                width: 100%;
+
+                .title_container_6 {
+                    h2 {
+                        font-family: 'Gilroy-SemiBold';
+                        font-weight: 600;
+                        font-size: 2.8em;
+                        line-height: 120%;
+                        color: #0A172C;
+
+                    }
+                }
+
+                .area_faq {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    max-width: 1000px;
+                    width: 100%;
+                    gap: 40px;
+
+                    .faq_quests {
+                        display: flex;
+                        align-items: flex-start;
+                        justify-content: center;
+                        flex-direction: column;
+                        max-width: 980px;
+                        width: 100%;
+                        padding-left: 1.5rem;
+
+                        .title_faq_total {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            max-width: 640px;
+                            width: 100%;
+
+                            .quest {
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+                                gap: 40px;
+                                width: 100%;
+                                cursor: pointer;
+                                padding: 1.5rem 1.5rem 1.5rem 0rem;
+                                z-index: 1;
+                                border-top: 2px solid #0A172C;
+
+                                h2 {
+                                    font-family: 'Gilroy-SemiBold';
+                                    font-weight: 600;
+                                    font-size: 2em;
+                                    line-height: 120%;
+                                    color: #0A172C;
+
+                                }
+
+                                .btn_1 {
+                                    max-width: max-content;
+                                    height: auto;
+                                    width: 100%;
+                                }
+
+                                .area_title_info_faq {
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 40px;
+
+                                    .info_numeracao {
+                                        p {
+                                            font-family: 'Gilroy-SemiBold';
+                                            font-weight: 600;
+                                            font-size: 2em;
+                                            color: #0A172C;
+                                        }
+                                    }
+                                }
+
+
+                            }
+
+                            .aswer {
+                                overflow: hidden;
+                                max-height: 0px;
+                                opacity: 0;
+                                transition: all ease-in-out 400ms;
+                                transform: scaleY(0.2);
+                                transform-origin: top;
+                                background-color: #FFFFFF;
+                                width: 100%;
+                                z-index: 0;
+
+                                h2 {
+                                    font-family: 'Gilroy-Medium';
+                                    font-weight: 500;
+                                    font-size: 1.2em;
+                                    line-height: 120%;
+                                    color: #4F5763;
+
+
+                                }
+                            }
+
+
+                        }
+
+                    }
+
+
+                }
+
+            }
+
+            .area_empresas_container_6 {
+                display: flex;
+                flex-direction: column;
+                gap: 60px;
+                max-width: 360px;
+                width: 100%;
+
+                .empresas_container_6 {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    flex-direction: column;
+                    gap: 20px;
+
+                    .info_empresas_container_6 {
+                        p {
+                            font-family: 'Gilroy-SemiBold';
+                            font-weight: 600;
+                            font-size: 1.2em;
+                            line-height: 120%;
+                            color: #6F7887;
+                        }
+                    }
+
+                    .title_empresas_container_6 {
+                        h2 {
+                            font-family: 'Gilroy-Regular';
+                            font-weight: 400;
+                            font-size: 10em;
+                            line-height: 100%;
+                            color: #0A172C;
+
+
+                        }
+                    }
+                }
+            }
 
 
 
+        }
+    }
+}
 
 
+.btn_2 {
+    overflow: hidden;
+    max-height: 0px;
+    opacity: 0;
+    transition: all ease-in-out 400ms;
+}
 
+.open_faq {
+    display: flex;
+    height: fit-content;
+    max-height: 100% !important;
+    transition: all ease-in-out 400ms;
+    opacity: 1 !important;
+    transform: scaleY(1) !important;
+    margin-top: -40px;
+    margin-bottom: 20px;
+    padding: 2rem 2rem 2rem 0rem;
+}
 
+.close_faq h2 {
+    color: #7B23EE;
+}
 
+.btn_open {
+    opacity: 1;
+    max-height: 100% !important;
+    transition: all ease-in-out 400ms;
+}
+
+.btn_close {
+    opacity: 0;
+    transition: all ease-in-out 400ms;
+}
 
 .container_7 {
     display: flex;
@@ -975,7 +1192,281 @@ header {
 
 
 
+footer {
+    background-color: #032860;
+    width: 100%;
+    padding: 60px 0px 60px 0px;
 
+    .container_footer {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+        .container_footer_int {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            max-width: 1280px;
+
+            .area_footer_1 {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                gap: 60px;
+                width: 100%;
+
+                .area_contrate {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 30px;
+                    align-items: center;
+                    justify-content: center;
+                    max-width: 840px;
+                    width: 100%;
+                    text-align: center;
+
+                    .info_contrate {
+                        p {
+                            font-family: 'Gilroy-SemiBold';
+                            font-weight: 600;
+                            font-size: 1.2em;
+                            line-height: 120%;
+                            color: #24C247;
+                        }
+                    }
+
+                    .title_contrate {
+                        h2 {
+                            font-family: "Gilroy-SemiBold";
+                            font-weight: 600;
+                            font-size: 2.8em;
+                            line-height: 120%;
+                            color: #FFFFFF;
+                        }
+                    }
+
+                    .area_btn_contrate {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 20px;
+                        width: 100%;
+
+                        a {
+                            width: 100%;
+                            max-width: 340px
+                        }
+
+                        .btn_principal {
+
+                            @extend %btn_principal;
+                            width: 100%;
+                            max-width: 340px;
+                            padding: 10px 0px;
+
+                            h2 {
+
+                                font-family: 'Gilroy-Bold';
+                                font-weight: 700;
+                                font-size: 1em;
+                                text-transform: uppercase;
+                                color: #FFFFFF;
+
+                            }
+                        }
+
+                        .btn_principal.color {
+                            @extend %btn_principal_2;
+                            width: 100%;
+                            max-width: 340px;
+                            padding: 10px 0px;
+                            background: #16558E;
+
+                            h2 {
+
+                                font-family: 'Gilroy-Bold';
+                                font-weight: 700;
+                                font-size: 1em;
+                                text-transform: uppercase;
+                                color: #FFFFFF;
+
+                            }
+                        }
+
+
+                    }
+
+
+                }
+
+
+
+                .area_footer_2 {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+
+                    .footer_col {
+                        display: flex;
+                        flex-direction: column;
+                        width: 100%;
+                        max-width: max-content;
+                        gap: 20px;
+
+                        .logo_footer {
+                            max-width: 296px;
+                            width: 100%;
+                            object-fit: contain;
+                        }
+
+                        .info_footer_logo {
+                            max-width: 400px;
+
+                            p {
+                                font-family: 'Gilroy-SemiBold';
+                                font-weight: 600;
+                                font-size: 1em;
+                                line-height: 120%;
+                                color: #95A6BF;
+                            }
+                        }
+
+                        .title_solucoes {
+                            h2 {
+                                font-family: 'Gilroy-SemiBold';
+                                font-weight: 600;
+                                font-size: 1.8em;
+                                line-height: 100%;
+                                color: #FFFFFF;
+                            }
+
+                        }
+
+                        .info_solucoes {
+                            p {
+                                font-family: 'Gilroy-SemiBold';
+                                font-weight: 600;
+                                font-size: 1em;
+                                line-height: 120%;
+                                color: #95A6BF;
+                            }
+                        }
+
+                        .title_contato {
+                            h2 {
+                                font-family: 'Gilroy-SemiBold';
+                                font-weight: 600;
+                                font-size: 1.8em;
+                                line-height: 100%;
+                                color: #FFFFFF;
+                            }
+
+                        }
+
+                        .area_solucoes_total {
+                            display: flex;
+                            justify-content: center;
+                            width: 100%;
+                            gap: 60px;
+
+                            .area_solucoes_footer {
+                                display: flex;
+                                flex-direction: column;
+                                gap: 15px;
+
+                            }
+
+                        }
+
+                        .area_solucoes_total_2 {
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: flex-start;
+                            width: 100%;
+                            flex-direction: column;
+                            gap: 20px;
+
+                            .area_solucoes_footer_2 {
+                                display: flex;
+                                flex-direction: column;
+                                gap: 15px;
+
+                            }
+
+                        }
+
+                        .whats {
+                            display: flex;
+                            align-items: flex-start;
+                            gap: 10px;
+
+                            p {
+                                font-family: 'Gilroy-SemiBold';
+                                font-weight: 600;
+                                font-size: 1em;
+                                line-height: 120%;
+                                color: #95A6BF;
+                            }
+                        }
+
+                        .email {
+                            display: flex;
+                            align-items: flex-start;
+                            gap: 10px;
+
+                            p {
+                                font-family: 'Gilroy-SemiBold';
+                                font-weight: 600;
+                                font-size: 1em;
+                                line-height: 120%;
+                                color: #95A6BF;
+                            }
+                        }
+
+
+                        .redes_sociais {
+                            display: flex;
+                            align-items: center;
+                            gap: 20px;
+
+                            a {
+                                display: flex;
+                            }
+                        }
+
+                        .copy {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 100%;
+                            background: #007E7D;
+                            padding: 20px 0px;
+
+                            p {
+                                font-weight: 600;
+                                font-size: 16px;
+                                line-height: 100%;
+                                color: #FFFFFF;
+                                padding: 0px 20px;
+                                text-align: center;
+
+                                a {
+                                    font-weight: 600;
+                                    font-size: 16px;
+                                    color: #FFFFFF;
+                                }
+                            }
+                        }
+                    }
+
+                }
+
+
+            }
+        }
+    }
+}
 
 
 
@@ -995,10 +1486,6 @@ header {
 
 
 @media(max-width: 1024px) {
-
-    .area_menu {
-        padding: 20px 20px 0px 20px;
-    }
 
     .menu_mobile {
         display: flex;
@@ -1044,12 +1531,15 @@ header {
         width: 100%;
         height: 100vh;
         opacity: 0.9;
-        background: #ffffff;
+        background: #2992de;
         position: fixed;
         top: 0px;
         z-index: 99;
         transition: all ease 400ms;
 
+    }
+
+    header {
         .container_menu {
             display: flex;
             justify-content: center;
@@ -1065,7 +1555,7 @@ header {
                 .area_menu {
                     flex-direction: column;
                     width: 100%;
-
+                    padding: 20px 20px 0px 20px;
 
                     .close {
                         cursor: pointer;
@@ -1134,11 +1624,294 @@ header {
             }
 
         }
+    }
 
+
+    #container_1 {
+        .container_1 {
+            .container_1_int {
+                .area_container_1 {
+                    .area_titles_container_1 {
+                        .title_container_1 {
+                            h1 {
+                                font-size: 2.2em;
+                            }
+                        }
+                    }
+
+
+                    .area_notebook_container_1 {
+                        flex-direction: column;
+                        gap: 40px;
+
+                        a {
+                            position: absolute;
+                            left: 20%;
+                            bottom: 0%;
+                            width: 100%;
+                            max-width: 340px;
+                        }
+
+                        .area_text_container_1 {
+                            border-radius: 24px 24px 24px 24px;
+                            margin-left: 0px;
+
+                        }
+
+                        .notebook {
+                            margin-left: 0px;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+
+    .container_2 {
+        height: 300px;
+        margin-top: -220px;
     }
 
 
 
+    .container_3 {
+        padding: 40px 0px 40px 0px;
+
+        .container_3_int {
+            .area_container_3 {
+                flex-direction: column;
+                gap: 20px;
+                padding: 0px 20px;
+
+                .area_text_container_3 {
+                    text-align: center;
+                    align-items: center;
+
+                    a {
+                        max-width: 340px;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+
+    .container_4 {
+        .container_4_int {
+            .area_container_4 {
+                padding: 0px 20px;
+
+                .title_container_4 {
+                    h2 {
+                        font-size: 2.2em;
+                    }
+                }
+            }
+        }
+    }
+
+    #container_5 {
+        .container_5 {
+            padding: 60px 0px 60px 0px;
+
+            .container_5_int {
+                .area_container_5 {
+                    padding: 0px 20px;
+
+                    .title_container_5 {
+                        h2 {
+                            font-size: 2.2em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .container_depoimentos {
+        .container_depoimentos_int {
+            .area_depoimentos {
+                gap: 40px;
+
+                .area_titles_depoimentos {
+                    .title_depoimentos {
+                        h2 {
+                            font-size: 2.2em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    .container_6 {
+        .container_6_int {
+            .area_container_6 {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .area_text_container_6 {
+                    gap: 40px;
+
+                    .title_container_6 {
+                        h2 {
+                            font-size: 2.2em;
+                        }
+                    }
+
+                    .area_faq {
+                        .faq_quests {
+                            .title_faq_total {
+                                .quest {
+                                    h2 {
+                                        font-size: 1.6em;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .area_empresas_container_6 {
+                    .empresas_container_6 {
+                        .title_empresas_container_6 {
+                            h2 {
+                                font-size: 8em;
+                            }
+                        }
+                    }
+                }
+
+
+            }
+        }
+    }
+
+    .container_7 {
+        padding: 60px 0px 60px 0px;
+    }
+
+
+    footer {
+        .container_footer {
+            .container_footer_int {
+                .area_footer_1 {
+                    padding: 0px 20px;
+
+                    .area_footer_2 {
+                        flex-direction: column;
+                        gap: 40px;
+                        align-items: center;
+
+                        .footer_col {
+                            max-width: 400px;
+
+                            .area_solucoes_total {
+                                justify-content: flex-start;
+                            }
+                        }
+                    }
+
+                    .area_contrate {
+                        .title_contrate {
+                            h2 {
+                                font-size: 2.2em;
+                            }
+                        }
+
+                        .area_btn_contrate {
+                            flex-wrap: wrap;
+                        }
+
+
+                    }
+
+                }
+            }
+        }
+    }
+
+}
+
+@media(max-width: 480px) {
+    #container_1 {
+        .container_1 {
+            .container_1_int {
+                .area_container_1 {
+                    padding: 0px 20px;
+
+                    .area_notebook_container_1 {
+
+                        a {
+                            position: absolute;
+                            left: 10%;
+                            bottom: 0%;
+                            width: 100%;
+                            max-width: 340px;
+                        }
+
+
+                    }
+
+                }
+            }
+        }
+    }
+
+    .container_3 {
+        .container_3_int {
+            .area_container_3 {
+                .area_bg_segmentos {
+                    .box_bg_segmentos {
+                        bottom: 0%;
+                        left: 0%;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    .container_6 {
+        .container_6_int {
+            .area_container_6 {
+                .area_text_container_6 {
+                    max-width: 370px;
+
+                    .title_container_6 {
+                        h2 {
+                            text-align: center;
+                        }
+                    }
+
+                    .area_faq {
+                        .faq_quests {
+                            width: auto;
+                            padding-left: 1rem;
+
+                            .title_faq_total {
+                                .quest {
+                                    h2 {
+                                        font-size: 1.4em;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .area_empresas_container_6 {
+                    gap: 40px;
+                }
+            }
+        }
+    }
 
 
 

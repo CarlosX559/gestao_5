@@ -1,3 +1,31 @@
+function faq() {
+
+    const quest = document.querySelectorAll(".quest");
+    const aswer = document.querySelectorAll(".aswer");
+    const img_icon = document.querySelectorAll('.btn_1');
+    for (let i = 0; i < quest.length; i++) {
+  
+      quest[i].addEventListener("click", () => {
+  
+        if (quest[i].classList.contains("close_faq")) {
+          quest[i].classList.toggle("close_faq");
+          aswer[i].classList.toggle("open_faq");
+          img_icon[i].src = 'img/+.png';
+        } else {
+          quest[i].classList.add("close_faq");
+          aswer[i].classList.add("open_faq");
+          img_icon[i].src = 'img/-.png';
+        }
+  
+  
+      });
+  
+    }
+  
+  
+  }
+  faq();
+
 function menu() {
 
     let open = document.querySelector(".menu_open");
