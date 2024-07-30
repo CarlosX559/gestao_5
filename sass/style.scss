@@ -1840,7 +1840,11 @@ footer {
 
 @media(max-width: 480px) {
     #container_1 {
+        margin-top: -62px;
+
         .container_1 {
+            height: 1080px;
+
             .container_1_int {
                 .area_container_1 {
                     padding: 0px 20px;
@@ -1849,8 +1853,8 @@ footer {
 
                         a {
                             position: absolute;
-                            left: 10%;
-                            bottom: 0%;
+                            left: 4%;
+                            bottom: 15px;
                             width: 100%;
                             max-width: 340px;
                         }
@@ -1858,9 +1862,23 @@ footer {
 
                     }
 
+                    .area_titles_container_1 {
+                        .title_container_1 {
+                            h1 {
+                                font-size: 2em;
+                            }
+                        }
+                    }
+
                 }
             }
         }
+    }
+
+
+    .container_2 {
+        height: 180px;
+        margin-top: -110px;
     }
 
     .container_3 {
@@ -1872,11 +1890,62 @@ footer {
                         left: 0%;
                     }
                 }
+                .area_text_container_3 {
+                    .title_container_3 {
+                        h2 {
+                            font-size: 2em;
+                        }
+                    }
+                }
             }
         }
     }
 
+    .container_4{
+        .container_4_int {
+            .area_container_4 {
+                .title_container_4 {
+                    h2 {
+                        font-size: 2em;
+                    }
+                }
+            }
+        }
+    }
 
+    #container_5 {
+        .container_5 {
+            .container_5_int {
+                .area_container_5 {
+                    gap: 40px;
+                    .title_container_5 {
+                        h2 {
+                            font-size: 2em;
+                        }
+                    }
+
+                    .area_info_gestao {
+                        gap: 60px;
+                     
+                    }
+                }
+            }
+        }
+    }
+
+    .container_depoimentos {
+        padding: 60px 0px 0px 0px;
+        .container_depoimentos_int {
+            .area_depoimentos {
+                .area_titles_depoimentos {
+                    padding: 0px 20px;
+                    .title_depoimentos h2 {
+                        font-size: 2em;
+                    }
+                }
+            }
+        }
+    }
 
     .container_6 {
         .container_6_int {
@@ -1913,6 +1982,23 @@ footer {
         }
     }
 
+
+    footer {
+        .container_footer {
+            .container_footer_int {
+                .area_footer_1 {
+                    gap: 40px;
+                    .area_contrate {
+                        .title_contrate {
+                            h2 {
+                                font-size: 2em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 
 
 }
