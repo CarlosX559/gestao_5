@@ -466,8 +466,8 @@ header {
                     max-width: 490px;
                     width: 100%;
                     height: 80px;
-                    bottom: 10%;
-                    left: 10%;
+                    bottom: 32%;
+                    left: 16%;
                     background: #FFFFFF;
                     border-radius: 16px 0px 16px 16px;
 
@@ -495,6 +495,45 @@ header {
                                 }
                             }
                         }
+                    }
+                }
+
+                .area_principais_segmentos {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    gap: 15px;
+                    width: 100%;
+                    
+
+                    .principais_segmentos {
+                        width: 150px;
+                        padding: 10px 0px;
+                        background: #FFFFFF;
+                        border-radius: 20px 0px 20px 20px;
+                        box-shadow: 5px 2px 50px -10px rgba(0, 0, 0, 0.2);
+
+                        .principais_segmentos_int {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            gap: 8px;
+
+                            .info_segmento_principal {
+                                p {
+                                    font-family: 'Gilroy-SemiBold';
+                                    font-weight: 600;
+                                    font-size: 1em;
+                                    line-height: 120%;
+                                    color: #3D4550;
+
+
+                                }
+                            }
+
+                        }
+
                     }
                 }
 
@@ -1880,7 +1919,7 @@ footer {
         height: 180px;
         margin-top: -110px;
     }
-   
+
     .container_3 {
         .container_3_int {
             .area_container_3 {
@@ -1888,9 +1927,11 @@ footer {
                     .bg_segmentos {
                         margin-left: 20px;
                     }
+
                     .box_bg_segmentos {
-                        bottom: 0%;
+                        bottom: 52%;
                         left: 0%;
+
                         .box_bg_segmentos_int {
                             .info_segmentos {
                                 p {
@@ -1901,6 +1942,7 @@ footer {
                         }
                     }
                 }
+
                 .area_text_container_3 {
                     .title_container_3 {
                         h2 {
@@ -1912,7 +1954,7 @@ footer {
         }
     }
 
-    .container_4{
+    .container_4 {
         .container_4_int {
             .area_container_4 {
                 .title_container_4 {
@@ -1929,6 +1971,7 @@ footer {
             .container_5_int {
                 .area_container_5 {
                     gap: 40px;
+
                     .title_container_5 {
                         h2 {
                             font-size: 2em;
@@ -1937,7 +1980,7 @@ footer {
 
                     .area_info_gestao {
                         gap: 60px;
-                     
+
                     }
                 }
             }
@@ -1946,10 +1989,12 @@ footer {
 
     .container_depoimentos {
         padding: 60px 0px 0px 0px;
+
         .container_depoimentos_int {
             .area_depoimentos {
                 .area_titles_depoimentos {
                     padding: 0px 20px;
+
                     .title_depoimentos h2 {
                         font-size: 2em;
                     }
@@ -1999,6 +2044,7 @@ footer {
             .container_footer_int {
                 .area_footer_1 {
                     gap: 40px;
+
                     .area_contrate {
                         .title_contrate {
                             h2 {
@@ -2030,6 +2076,7 @@ footer {
         }
 
     }
+
     .container_6 {
         .container_6_int {
             .area_container_6 {
