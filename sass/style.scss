@@ -56,8 +56,47 @@ p {
 
 a {
     text-decoration: none;
+    max-width: 340px;
 }
 
+
+[data-animation] {
+    opacity: 0;
+    transition: all 200ms ease-in;
+}
+
+[data-delay-1] {
+    transition-delay: 200ms;
+}
+
+[data-delay-2] {
+    transition-delay: 300ms;
+}
+
+[data-delay-3] {
+    transition-delay: 400ms;
+}
+
+[data-delay-4] {
+    transition-delay: 500ms;
+}
+
+[data-animation="down"] {
+    transform: translate3d(0, 20px, 0);
+}
+
+[data-animation="left"] {
+    transform: translate3d(-20px, 0, 0);
+}
+
+[data-animation="right"] {
+    transform: translate3d(20px, 0, 0);
+}
+
+[data-animation].animate {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
 
 header {
     width: 100%;
@@ -136,6 +175,142 @@ header {
     display: none;
 }
 
+@-webkit-keyframes pulse-verde {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 #60C224, 0 0 0 0 #24C247;
+    }
+
+    70% {
+        transform: scale(1.01);
+        box-shadow: 0 0 0 10px transparent, 0 0 0 20px transparent;
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 transparent, 0 0 0 0 transparent;
+    }
+}
+
+@-moz-keyframes pulse-verde {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 #60C224, 0 0 0 0 #24C247;
+    }
+
+    70% {
+        transform: scale(1.01);
+        box-shadow: 0 0 0 10px transparent, 0 0 0 20px transparent;
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 transparent, 0 0 0 0 transparent;
+    }
+}
+
+@-o-keyframes pulse-verde {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 #60C224, 0 0 0 0 #24C247;
+    }
+
+    70% {
+        transform: scale(1.01);
+        box-shadow: 0 0 0 10px transparent, 0 0 0 20px transparent;
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 transparent, 0 0 0 0 transparent;
+    }
+}
+
+@keyframes pulse-verde {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 #60C224, 0 0 0 0 #24C247;
+    }
+
+    70% {
+        transform: scale(1.01);
+        box-shadow: 0 0 0 10px transparent, 0 0 0 20px transparent;
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 transparent, 0 0 0 0 transparent;
+    }
+}
+
+
+@-webkit-keyframes pulse-azul {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 #16558E, 0 0 0 0 #16558E;
+    }
+
+    70% {
+        transform: scale(1.01);
+        box-shadow: 0 0 0 10px transparent, 0 0 0 20px transparent;
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 transparent, 0 0 0 0 transparent;
+    }
+}
+
+@-moz-keyframes pulse-azul {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 #16558E, 0 0 0 0 #16558E;
+    }
+
+    70% {
+        transform: scale(1.01);
+        box-shadow: 0 0 0 10px transparent, 0 0 0 20px transparent;
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 transparent, 0 0 0 0 transparent;
+    }
+}
+
+@-o-keyframes pulse-azul {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 #16558E, 0 0 0 0 #16558E;
+    }
+
+    70% {
+        transform: scale(1.01);
+        box-shadow: 0 0 0 10px transparent, 0 0 0 20px transparent;
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 transparent, 0 0 0 0 transparent;
+    }
+}
+
+@keyframes pulse-azul {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 #16558E, 0 0 0 0 #16558E;
+    }
+
+    70% {
+        transform: scale(1.01);
+        box-shadow: 0 0 0 10px transparent, 0 0 0 20px transparent;
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 transparent, 0 0 0 0 transparent;
+    }
+}
 
 %btn_principal {
     display: flex;
@@ -144,6 +319,10 @@ header {
     background: linear-gradient(90deg, #60C224 0%, #24C247 100%);
     box-shadow: 0px 0px 12.2px rgba(24, 150, 52, 0.5);
     border-radius: 10px;
+    -webkit-animation: pulse-verde 2s infinite;
+    -moz-animation: pulse-verde 2s infinite;
+    -o-animation: pulse-verde 2s infinite;
+    animation: pulse-verde 2s infinite;
 }
 
 %btn_principal_2 {
@@ -152,6 +331,10 @@ header {
     align-items: center;
     border-radius: 10px;
     box-shadow: none;
+    -webkit-animation: pulse-azul 2s infinite;
+    -moz-animation: pulse-azul 2s infinite;
+    -o-animation: pulse-azul 2s infinite;
+    animation: pulse-azul 2s infinite;
 }
 
 #container_1 {
@@ -318,8 +501,9 @@ header {
     width: 100%;
     background: rgba(3, 43, 104, 0.2);
     backdrop-filter: blur(27.65px);
-    height: 340px;
+    height: 300px;
     margin-top: -340px;
+    padding: 40px 0px 40px 0px;
 
     .container_2_int {
         display: flex;
@@ -357,7 +541,7 @@ header {
                         .box_container_2 {
                             width: 100%;
                             max-width: 260px;
-                            background: #065BA9;
+                            //background: #065BA9;
                             border-radius: 24px 0px 24px 24px;
 
                             .box_container_2_int {
@@ -374,6 +558,15 @@ header {
                                         color: #FFFFFF;
                                     }
                                 }
+
+                                .logo_slide {
+                                    height: auto;
+                                    width: 100%;
+                                    aspect-ratio: 4/3;
+                                    object-fit: contain;
+                                    mix-blend-mode: color-burn;
+                                }
+
                             }
                         }
                     }
@@ -852,7 +1045,7 @@ header {
                         .area_box_swiper {
                             width: 100%;
                             max-width: 380px;
-                            height: 400px;
+                            height: 450px;
                             background: #EEF2F3;
                             border: 1px solid #DCE6F5;
                             border-radius: 27px 0px 27px 27px;
@@ -1713,8 +1906,6 @@ footer {
         margin-top: -220px;
     }
 
-
-
     .container_3 {
         padding: 40px 0px 40px 0px;
 
@@ -1916,7 +2107,7 @@ footer {
 
 
     .container_2 {
-        height: 180px;
+        height: auto;
         margin-top: -110px;
     }
 
