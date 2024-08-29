@@ -563,9 +563,10 @@ header {
                                     height: auto;
                                     width: 100%;
                                     aspect-ratio: 4/4;
-                                    object-fit: fill;
+                                    object-fit: contain;
                                     mix-blend-mode: color-burn;
                                     border-radius: 100%;
+                                    background-color: #fff;
                                 }
 
                             }
