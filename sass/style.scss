@@ -3,9 +3,15 @@
     scroll-behavior: smooth;
 }
 
+html {
+    overflow-x: hidden !important;
+    box-sizing: border-box;
+}
+
 body {
     margin: 0px;
     padding: 0px;
+    overflow-x: hidden;
 }
 
 @font-face {
@@ -389,6 +395,7 @@ header {
     width: 100%;
     background-color: #0A1F47;
     margin-top: -60px;
+    position: relative;
 
     .container_1 {
         background-image: url(../img/abstract-background.png);
@@ -542,12 +549,8 @@ header {
 .area_banner_forma {
     position: absolute;
     width: 100%;
-    bottom: 10%;
+    bottom: 18%;
     left: 0px;
-
-    svg {
-        width: 100%;
-    }
 }
 
 
@@ -984,6 +987,7 @@ header {
         display: flex;
         justify-content: center;
         width: 100%;
+        padding: 0px 0px 60px 0px;
 
         .container_videos_int {
             display: flex;
