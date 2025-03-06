@@ -219,13 +219,13 @@
                     </path>
                 </g>
             </svg>
-    
+
         </div>
-    
+
 
     </section>
 
-  
+
 
 
 
@@ -528,7 +528,7 @@
                 <h2>Ideal para:</h2>
             </div>
             <div class="area_icons">
-                <div class="icons" data-animation="down" data-delay-1>
+                <div class="icons">
                     <img src="img/food.png" alt="Food trucks" loading="lazy">
                     <div class="title_icon">
                         <h2>
@@ -536,7 +536,7 @@
                         </h2>
                     </div>
                 </div>
-                <div class="icons" data-animation="down" data-delay-2>
+                <div class="icons">
                     <img src="img/varejo.png" alt="Varejo" loading="lazy">
                     <div class="title_icon">
                         <h2>
@@ -544,7 +544,7 @@
                         </h2>
                     </div>
                 </div>
-                <div class="icons" data-animation="down" data-delay-3>
+                <div class="icons">
                     <img src="img/eventos.png" alt="Eventos" loading="lazy">
                     <div class="title_icon">
                         <h2>
@@ -553,17 +553,17 @@
                         </h2>
                     </div>
                 </div>
-                <div class="icons" data-animation="down" data-delay-2>
+                <div class="icons">
                     <img src="img/cafeteria.png" alt="Restaurantes" loading="lazy">
                     <div class="title_icon">
                         <h2>
-                            Lanchonetes<br>
-                            restaurantes<br>
+                            Lanchonetes
+                            restaurantes
                             cafeterias
                         </h2>
                     </div>
                 </div>
-                <div class="icons" data-animation="down" data-delay-2>
+                <div class="icons">
                     <img src="img/livrarias.png" alt="Livrarias" loading="lazy">
                     <div class="title_icon">
                         <h2>
@@ -571,7 +571,7 @@
                         </h2>
                     </div>
                 </div>
-                <div class="icons" data-animation="down" data-delay-3>
+                <div class="icons">
                     <img src="img/pet_shop.png" alt="Pet shop" loading="lazy">
                     <div class="title_icon">
                         <h2>
@@ -579,7 +579,7 @@
                         </h2>
                     </div>
                 </div>
-                <div class="icons" data-animation="down" data-delay-4>
+                <div class="icons">
                     <img src="img/padaria.png" alt="Padaria" loading="lazy">
                     <div class="title_icon">
                         <h2>
@@ -590,6 +590,75 @@
             </div>
         </div>
     </div>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const icons = document.querySelectorAll(".icons");
+            const infoContainer = document.createElement("div");
+            infoContainer.classList.add("info_display");
+            infoContainer.style.opacity = "0";
+            infoContainer.style.transition = "opacity 0.3s ease-in-out";
+            document.querySelector(".container_icons").appendChild(infoContainer);
+
+            const infoData = {
+                "Food trucks": `🍔 Venda sem complicação → Registra pedidos rapidinho e já calcula o total.<br>
+            📦 Controle de estoque → Mostra o que está acabando para evitar desperdícios.<br>
+            💰 Organiza o dinheiro → Separa pagamentos por cartão, PIX, dinheiro e dá relatórios fáceis de entender.<br>
+            🎟 Fidelização de clientes → Dá para criar promoções, cupons de desconto e cadastrar clientes fiéis.<br>
+            📝 Emissão de nota fiscal → Evita dor de cabeça com a fiscalização.<br>
+            📊 Relatórios acessíveis de qualquer lugar → Dá para acompanhar as vendas pelo celular ou computador.<br>
+            No fim, um sistema desses deixa o trabalho mais leve e o atendimento mais rápido.`,
+                "Varejo": `🛍 Venda sem estresse → Registre compras em segundos e agilize o atendimento.<br>
+            📦 Estoque sempre sob controle → Veja o que tem disponível e evite produtos em falta.<br>
+            💳 Pagamentos organizados → Controle dinheiro, PIX, cartão e até fiado sem complicação.<br>
+            📲 Venda online e na loja → Integre com marketplaces e plataformas de e-commerce.<br>
+            🎟 Clientes voltando sempre → Cadastre clientes, ofereça descontos e crie promoções especiais.<br>
+            📝 Nota fiscal sem dor de cabeça → Emita NFC-e de forma automática e mantenha tudo regularizado.<br>
+            📊 Relatórios fáceis e em tempo real → Acompanhe vendas e lucros direto do celular ou computador.`,
+                "Eventos shows": `🎟 Venda ingressos sem complicação → Gerencie bilheteria e controle de acessos.<br>
+            📊 Relatórios de vendas → Monitore ingressos vendidos e receitas em tempo real.<br>
+            💳 Pagamentos flexíveis → Aceite cartões, PIX e outras formas de pagamento.<br>
+            🔄 Gestão de equipe → Controle credenciais e acessos dos funcionários no evento.`,
+                "Lanchonetes restaurantes cafeterias": `🍽 Gestão de Mesas e Comandas → Pedidos enviados diretamente para a cozinha.<br>
+            🔔 Atendimento no Balcão com Painel de Senha → Organização eficiente de pedidos.<br>
+            🚀 Delivery e Retirada → Gerencie pedidos de entrega e retirada facilmente.<br>
+            📊 Relatórios Financeiros → Acompanhe vendas e fluxo de caixa pelo celular.`,
+                "Livrarias": `📚 Catálogo organizado → Cadastre livros e gerencie estoques com facilidade.<br>
+            🛒 Vendas presenciais e online → Integração com plataformas de e-commerce.<br>
+            🎟 Programas de fidelidade → Crie promoções e descontos para clientes frequentes.<br>
+            📊 Relatórios de vendas → Monitore o desempenho da sua livraria.`,
+                "Pet shop": `🐶 Controle de estoque → Gerencie produtos e evite falta de mercadorias.<br>
+            🐾 Agendamentos → Marque banhos, tosas e consultas para clientes.<br>
+            📊 Relatórios financeiros → Acompanhe entradas e saídas com facilidade.<br>
+            💳 Pagamentos organizados → Aceite diversas formas de pagamento.`,
+                "Padaria": `🥐 Controle de produção → Gerencie ingredientes e evite desperdícios.<br>
+            ☕ Vendas rápidas no balcão → Sistema ágil para atendimento eficiente.<br>
+            📊 Relatórios e fluxo de caixa → Monitore vendas e despesas em tempo real.<br>
+            💰 Gestão de pagamentos → Organize PIX, cartão, dinheiro e fiado.`
+            };
+
+            icons.forEach(icon => {
+                icon.addEventListener("click", function () {
+                    icons.forEach(i => i.classList.remove("selected"));
+                    this.classList.add("selected");
+
+                    const title = this.querySelector(".title_icon h2").innerText.trim().toLowerCase();
+                    const matchedKey = Object.keys(infoData).find(key => key.toLowerCase().includes(title));
+                    if (matchedKey) {
+                        infoContainer.style.opacity = "0";
+                        setTimeout(() => {
+                            infoContainer.innerHTML = `<h3 class='title_display'>${matchedKey}</h3><p class='sub_title_display'>${infoData[matchedKey]}</p>`;
+                            infoContainer.style.opacity = "1";
+                        }, 300);
+                    } else {
+                        infoContainer.innerHTML = "Informação não encontrada.";
+                    }
+                });
+            });
+        });
+
+    </script>
 
     <div class="container_4" id="sistema">
         <div class="container_4_int">
@@ -821,9 +890,18 @@
         <div class="container_videos">
             <div class="container_videos_int">
                 <div class="area_videos">
-                    <iframe width="600" height="400" src="https://www.youtube.com/embed/eNfGZz0y6pE" title="Cadastro de Contato Gestao 5.6" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    <iframe width="600" height="400" src="https://www.youtube.com/embed/eNfGZz0y6pE" title="Cadastro de Contato Gestao 5.6" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    <iframe width="600" height="400" src="https://www.youtube.com/embed/eNfGZz0y6pE" title="Cadastro de Contato Gestao 5.6" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe width="600" height="400" src="https://www.youtube.com/embed/eNfGZz0y6pE"
+                        title="Cadastro de Contato Gestao 5.6" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe width="600" height="400" src="https://www.youtube.com/embed/eNfGZz0y6pE"
+                        title="Cadastro de Contato Gestao 5.6" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe width="600" height="400" src="https://www.youtube.com/embed/eNfGZz0y6pE"
+                        title="Cadastro de Contato Gestao 5.6" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
         </div>

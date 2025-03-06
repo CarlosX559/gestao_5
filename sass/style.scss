@@ -809,6 +809,36 @@ header {
     padding: 60px 0px 60px 0px;
     background-color: #2992de;
     margin: 60px 0px 60px 0px;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+
+
+    .info_display {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        background: #ecf1f4;
+        border-radius: 60px 0px 60px 60px;
+        padding: 60px 30px 60px 30px;
+        .title_display {
+            font-family: "Gilroy-SemiBold";
+            font-weight: 600;
+            font-size: 2.5em;
+            line-height: 120%;
+            text-align: center;
+            color: #0a172c;
+            margin: 0px;
+           
+        }
+        .sub_title_display {
+            font-family: "Gilroy-Medium";
+            font-weight: 500;
+            font-size: 1.2em;
+            line-height: 24px;
+            color: #0a172c;
+        }
+    }
 
     .container_icons_int {
         display: flex;
@@ -845,6 +875,8 @@ header {
                 justify-content: flex-start;
                 gap: 30px;
                 max-width: 185px;
+                cursor: pointer;
+                transition: transform 0.3s ease-in-out;
 
                 img {
                     max-width: 90px;
@@ -866,6 +898,12 @@ header {
                 }
                 
 
+            }
+            .icons:hover {
+                transform: scale3d(1.1,1.1,1.1);
+            }
+            .icons.selected {
+                transform: scale3d(1.1, 1.1, 1.1);
             }
 
         }
@@ -2327,6 +2365,12 @@ footer {
     }
 
     .container_icons {
+        .info_display {
+            margin: 0px 20px;
+            .title_display {
+                font-size: 2em;
+            }
+        }
         .container_icons_int {
             .area_icons {
                 gap: 30px;
