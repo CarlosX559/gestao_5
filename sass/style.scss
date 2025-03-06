@@ -105,7 +105,7 @@ a {
 }
 
 .animation {
-    animation: pulsar 1.5s infinite;
+    animation: pulsar 3s infinite;
 }
 
 @keyframes pulsar {
@@ -115,7 +115,7 @@ a {
 
     70% {
         transform: scale();
-        box-shadow: 0 0 0 20px rgba(69, 152, 27, 0);
+        box-shadow: 0 0 0 15px rgba(69, 152, 27, 0);
     }
 
     100% {
