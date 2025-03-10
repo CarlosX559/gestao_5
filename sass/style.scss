@@ -520,18 +520,17 @@ header {
                         top: 20px;
                         z-index: 0;
 
-                    }
+                        .item {
+                            height: 370px;
 
-                    .slide-3 .item {
-                        height: 370px;
-                    }
-
-                    .slide-3 .item img {
-                        max-width: 75%;
-                        width: 100%;
-                        position: absolute;
-                        height: 280px;
-                        object-fit: cover;
+                            img {
+                                max-width: 75%;
+                                width: 100%;
+                                position: absolute;
+                                height: 280px;
+                                object-fit: cover;
+                            }
+                        }
                     }
 
                     .slide-3 .owl-dots {
@@ -2356,17 +2355,23 @@ footer {
                             margin-left: 0px;
                         }
 
+
                         .slide-3 {
                             position: absolute;
                             left: 12.5%;
                             top: 15px;
                             z-index: 0;
-                            .item img {
-                                max-width: 75%;
-                                width: 100%;
-                                position: absolute;
-                                height: 345px;
-                                object-fit: cover;
+
+                            .item {
+                                height: 370px;
+
+                                img {
+                                    max-width: 75%;
+                                    width: 100%;
+                                    position: absolute;
+                                    height: 345px;
+                                    object-fit: cover;
+                                }
                             }
                         }
 
@@ -2621,12 +2626,17 @@ footer {
                             left: 12.5%;
                             top: 15px;
                             z-index: 0;
-                            .item img {
-                                max-width: 75%;
-                                width: 100%;
-                                position: absolute;
-                                height: 175px;
-                                object-fit: cover;
+
+                            .item {
+                                height: 370px;
+
+                                img {
+                                    max-width: 75%;
+                                    width: 100%;
+                                    position: absolute;
+                                    height: 175px;
+                                    object-fit: cover;
+                                }
                             }
                         }
 
