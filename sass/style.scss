@@ -421,6 +421,7 @@ header {
                 flex-direction: column;
                 gap: 30px;
                 width: 100%;
+                margin-top: -300px;
 
                 .area_titles_container_1 {
                     display: flex;
@@ -429,6 +430,11 @@ header {
                     flex-direction: column;
                     gap: 20px;
                     max-width: 1000px;
+
+                    .logo_autorizada {
+                        max-width: 250px;
+                        width: 100%;
+                    }
 
                     .info_container_1 {
                         p {
@@ -1274,6 +1280,20 @@ header {
                 gap: 40px;
                 flex-wrap: wrap;
                 width: 100%;
+
+                .swiper_3 {
+                    width: 100%;
+                    max-width: 700px;
+
+                    .swiper-wrapper {
+
+                        .swiper-slide {
+                            display: flex !important;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                    }
+                }
             }
         }
     }
@@ -2324,6 +2344,8 @@ footer {
 
             .container_1_int {
                 .area_container_1 {
+                    margin-top: 0px;
+
                     .area_titles_container_1 {
                         .title_container_1 {
                             h1 {
@@ -2577,7 +2599,7 @@ footer {
     }
 
     .area_banner_forma {
-        bottom: 1%;
+        bottom: -2%;
     }
 
     .container_2 {
@@ -2680,7 +2702,7 @@ footer {
 
     .container_2 {
         height: auto;
-        margin-top: -80px;
+        margin-top: -60px;
     }
 
     .container_3 {
