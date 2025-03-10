@@ -7,6 +7,8 @@
     <title>Gestão 5.6</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
@@ -112,6 +114,7 @@
                     </div>
 
 
+
                     <div class="area_notebook_container_1">
 
                         <div class="area_text_container_1">
@@ -160,7 +163,44 @@
                             </div>
                         </div>
 
-                        <img class="notebook" src="img/Notebook.png" alt="">
+                        <!--<img class="notebook" src="img/Notebook.png" alt="">-->
+
+                        <div class="area_notebook">
+
+                            <img class="notebook" src="img/notebook.png" alt="" >
+        
+                            <div class="slide-3 owl-carousel owl-theme">
+        
+                                <div class="item mockup">
+                                    <img src="img/Cadastro_produtos_1.png" alt="" loading="lazy">
+                                </div>
+                                <div class="item mockup">
+                                    <img src="img/Cadastro_produtos_2.png" alt="" loading="lazy">
+                                </div>
+                                <div class="item mockup">
+                                    <img src="img/Cadastro_produtos_3.png" alt="" loading="lazy">
+                                </div>
+                                <div class="item mockup">
+                                    <img src="img/Cadastro_produtos_4.png" alt="" loading="lazy">
+                                </div>
+                                <div class="item mockup">
+                                    <img src="img/Cadastro_produtos_5.png" alt="" loading="lazy">
+                                </div>
+                                <div class="item mockup">
+                                    <img src="img/Cadastro_produtos_6.png" alt="" loading="lazy">
+                                </div>
+                                <div class="item mockup">
+                                    <img src="img/Cadastro_produtos_7.png" alt="" loading="lazy">
+                                </div>
+                                <div class="item mockup">
+                                    <img src="img/Cadastro_produtos_8.png" alt="" loading="lazy">
+                                </div>
+                                <div class="item mockup">
+                                    <img src="img/Cadastro_produtos_9.png" alt="" loading="lazy">
+                                </div>
+        
+                            </div>
+                        </div>
 
                         <a href="https://api.whatsapp.com/send?phone=554192384774&text=Ol%C3%A1,%20seja%20bem%20vindo(a),%20vamos%20fazer%20seu%20or%C3%A7amento"
                             target="_blank">
@@ -1810,9 +1850,10 @@
     </footer>
 
 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
 
     <script>
 
@@ -1916,6 +1957,41 @@
             },
 
         });
+
+        $(".slide-3").owlCarousel({
+                animateOut: 'fadeOut',
+                touchDrag: false,
+                mouseDrag: false,
+                items: 1,
+                loop: true,
+                nav: false,
+                /*navText: [
+                    prev,
+                    next
+                ],*/
+                autoplay: true,
+                autoplayTimeout: 5000,
+                dots: true,
+                responsive: {
+                    375: {
+                        items: 1
+                    },
+                    480: {
+                        items: 1
+                    },
+                    600: {
+                        items: 1
+                    },
+                    1024: {
+                        items: 1
+                    },
+                    1440: {
+                        items: 1
+                    }
+                }
+
+            });
+      
 
     </script>
 </body>
