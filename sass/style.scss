@@ -575,20 +575,22 @@ header {
 
         .area_texto {
             max-width: 600px;
+
             p {
                 font-family: "Gilroy-Medium";
                 font-weight: 500;
                 font-size: 1.6em;
                 line-height: 120%;
                 color: #ebf3ff;
-              b {
-                color: #24c247;
-                font-family: "Gilroy-Medium";
-                font-weight: bold;
-              }
+
+                b {
+                    color: #24c247;
+                    font-family: "Gilroy-Medium";
+                    font-weight: bold;
+                }
             }
-           
-          
+
+
         }
 
         .area_container_2 {
@@ -627,14 +629,14 @@ header {
                             overflow: hidden;
                             border-radius: 24px 0px 24px 24px;
 
-                                .logo_slide {
-                                    width: 100%;
-                                    border-radius: 16px;
-                                    object-fit: cover;
-                            
-                                }
+                            .logo_slide {
+                                width: 100%;
+                                border-radius: 16px;
+                                object-fit: cover;
 
-                            
+                            }
+
+
                         }
                     }
                 }
@@ -827,6 +829,7 @@ header {
         background: #ecf1f4;
         border-radius: 60px 0px 60px 60px;
         padding: 60px 30px 60px 30px;
+
         .title_display {
             font-family: "Gilroy-SemiBold";
             font-weight: 600;
@@ -835,8 +838,9 @@ header {
             text-align: center;
             color: #0a172c;
             margin: 0px;
-           
+
         }
+
         .sub_title_display {
             font-family: "Gilroy-Medium";
             font-weight: 500;
@@ -864,7 +868,7 @@ header {
                 text-align: center;
                 color: #fff;
             }
-           
+
         }
 
         .area_icons {
@@ -900,14 +904,16 @@ header {
                         text-align: center;
                         text-transform: uppercase;
                     }
-                   
+
                 }
-                
+
 
             }
+
             .icons:hover {
-                transform: scale3d(1.1,1.1,1.1);
+                transform: scale3d(1.1, 1.1, 1.1);
             }
+
             .icons.selected {
                 transform: scale3d(1.1, 1.1, 1.1);
             }
@@ -917,6 +923,161 @@ header {
 
 }
 
+.container_card {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0px 0px 60px 0px;
+
+    .container_card_int {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        max-width: 1280px;
+
+        .area_card {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            width: 100%;
+
+            .card_certificado {
+                display: flex;
+                max-width: 420px;
+                width: 100%;
+                background: #ecf1f4;
+                padding: 40px 20px 40px 20px;
+                border-radius: 60px 0px 60px 60px;
+
+                .card_certificado_int {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 30px;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+
+                    .area_img_certificado {
+                        display: flex;
+                        gap: 10px;
+                        align-items: center;
+                        flex-direction: column;
+
+                        .title_card_certificado {
+                            h2 {
+                                font-family: "Gilroy-Bold";
+                                font-weight: bold;
+                                font-size: 1.7em;
+                                line-height: 100%;
+                                color: #0a172c;
+                                text-align: center;
+                            }
+    
+    
+                        }
+    
+                    }
+
+                    .title_card_certificado {
+                        h2 {
+                            font-family: "Gilroy-Bold";
+                            font-weight: bold;
+                            font-size: 1.7em;
+                            line-height: 35px;
+                            color: #0a172c;
+                            text-align: center;
+                        }
+
+
+                    }
+
+
+                    .sub_title_card_certificado {
+                        p {
+                            font-family: "Gilroy-Medium";
+                            font-weight: 500;
+                            font-size: 1.2em;
+                            line-height: 24px;
+                            color: #20242a;
+                        }
+
+                    }
+
+                    .area_preco {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        gap: 40px;
+                        background: linear-gradient(183.55deg, rgba(255, 255, 255, 0.15) 10.07%, rgba(255, 255, 255, 0) 97.08%);
+                        backdrop-filter: blur(2px);
+                        border-radius: 30px;
+                        width: 100%;
+                        padding: 20px 0px 0px 0px;
+
+
+                        .title_preco_card {
+                            h2 {
+                                font-family: "Gilroy-Bold";
+                                font-weight: bold;
+                                font-size: 2.4em;
+                                line-height: 35px;
+                                color: #0a172c;
+                            }
+
+                        }
+
+                    }
+
+                    .area_btn_payment {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 100%;
+
+                        a {
+                            width: 100%;
+                            max-width: 250px;
+
+                            .btn_principal.color {
+                                @extend %btn_principal_2;
+                                width: 100%;
+                                max-width: 250px;
+                                padding: 10px 0px;
+                                background: #16558E;
+
+                                h2 {
+
+                                    font-family: 'Gilroy-Bold';
+                                    font-weight: 700;
+                                    font-size: 1em;
+                                    text-transform: uppercase;
+                                    color: #FFFFFF;
+
+                                }
+
+                                img {
+                                    max-width: 25px;
+                                    width: 100%;
+                                }
+                            }
+
+
+                            .btn_principal:hover {
+                                transform: scale3d(1.08, 1.08, 1.08);
+                            }
+                        }
+
+
+                    }
+
+                }
+            }
+        }
+
+    }
+}
 
 
 
@@ -2077,10 +2238,23 @@ footer {
     .area_banner_forma {
         bottom: -5%;
     }
-    
+
+    .container_card {
+        .container_card_int {
+           
+            .area_card {
+                flex-direction: column;
+                .card_certificado {
+                    max-width: 340px;
+                }
+            }
+        }
+    }
+
     #container_1 {
         .container_1 {
             height: 1100px;
+
             .container_1_int {
                 .area_container_1 {
                     .area_titles_container_1 {
@@ -2121,12 +2295,13 @@ footer {
     }
 
 
-   
+
 
     .container_2 {
         height: 440px;
         margin-top: 0px;
         background: rgba(3, 43, 104, 1);
+
         .container_2_int {
             flex-direction: column;
             gap: 40px;
@@ -2316,11 +2491,12 @@ footer {
     .area_banner_forma {
         bottom: 3%;
     }
-    
+
     .container_2 {
         height: 440px;
         margin-top: 0px;
         background: rgba(3, 43, 104, 1);
+
         .container_2_int {
             flex-direction: column;
             gap: 60px;
@@ -2371,6 +2547,28 @@ footer {
         }
     }
 
+    #container_1 {
+        .container_1 {
+            .container_1_int {
+                .area_container_1 {
+                    .area_notebook_container_1 {
+                        a {
+                            position: absolute;
+                            left: 11%;
+                            bottom: 0px;
+                            width: 100%;
+                            max-width: 300px;
+
+                            .btn_principal.float {
+                                max-width: 300px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
 
     .container_2 {
         height: auto;
@@ -2414,10 +2612,12 @@ footer {
     .container_icons {
         .info_display {
             margin: 0px 20px;
+
             .title_display {
                 font-size: 2em;
             }
         }
+
         .container_icons_int {
             .area_icons {
                 gap: 30px;
