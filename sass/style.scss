@@ -402,7 +402,7 @@ header {
         width: 100%;
         background-position: center;
         background-size: cover;
-        height: 1360px;
+        height: 1440px;
         padding: 60px 0px 60px 0px;
         display: flex;
         justify-content: center;
@@ -549,19 +549,21 @@ header {
 .area_banner_forma {
     position: absolute;
     width: 100%;
-    bottom: 18%;
+    bottom: 21%;
     left: 0px;
 }
 
 
+
+
 .container_2 {
-    display: none;
+    display: flex;
     justify-content: center;
     width: 100%;
     background: rgba(3, 43, 104, 0.2);
     backdrop-filter: blur(27.65px);
-    height: 300px;
-    margin-top: -340px;
+    height: 330px;
+    margin-top: -400px;
     padding: 40px 0px 40px 0px;
 
     .container_2_int {
@@ -571,15 +573,35 @@ header {
         width: 100%;
         max-width: 1280px;
 
+        .area_texto {
+            max-width: 600px;
+            p {
+                font-family: "Gilroy-Medium";
+                font-weight: 500;
+                font-size: 1.6em;
+                line-height: 120%;
+                color: #ebf3ff;
+              b {
+                color: #24c247;
+                font-family: "Gilroy-Medium";
+                font-weight: bold;
+              }
+            }
+           
+          
+        }
+
         .area_container_2 {
             display: flex;
             justify-content: center;
             align-items: center;
             width: 100%;
+            flex: 2;
+            max-width: 400px;
 
             .swiper_1 {
                 width: 100%;
-                max-width: 1200px;
+                max-width: 300px;
                 overflow-y: visible;
 
                 .swiper-pagination {
@@ -596,39 +618,23 @@ header {
                         display: flex !important;
                         justify-content: center;
                         align-items: center;
+                        height: auto;
 
                         .box_container_2 {
                             width: 100%;
-                            max-width: 260px;
-                            //background: #065BA9;
+                            max-width: 200px;
+                            border-radius: 16px;
+                            overflow: hidden;
                             border-radius: 24px 0px 24px 24px;
 
-                            .box_container_2_int {
-                                display: flex;
-                                align-items: center;
-                                gap: 20px;
-                                padding: 15px;
-
-                                .info_container_2 {
-                                    p {
-                                        font-family: 'Gilroy-SemiBold';
-                                        font-weight: 600;
-                                        font-size: 1.4em;
-                                        color: #FFFFFF;
-                                    }
-                                }
-
                                 .logo_slide {
-                                    height: auto;
                                     width: 100%;
-                                    aspect-ratio: 4/4;
-                                    object-fit: contain;
-                                    mix-blend-mode: color-burn;
-                                    border-radius: 100%;
-                                    background-color: #fff;
+                                    border-radius: 16px;
+                                    object-fit: cover;
+                            
                                 }
 
-                            }
+                            
                         }
                     }
                 }
@@ -1979,6 +1985,8 @@ footer {
 
     }
 
+
+
     header {
         .container_menu {
             display: flex;
@@ -2066,9 +2074,13 @@ footer {
         }
     }
 
-
+    .area_banner_forma {
+        bottom: -5%;
+    }
+    
     #container_1 {
         .container_1 {
+            height: 1100px;
             .container_1_int {
                 .area_container_1 {
                     .area_titles_container_1 {
@@ -2086,7 +2098,7 @@ footer {
 
                         a {
                             position: absolute;
-                            left: 20%;
+                            left: 33%;
                             bottom: 0%;
                             width: 100%;
                             max-width: 340px;
@@ -2109,9 +2121,22 @@ footer {
     }
 
 
+   
+
     .container_2 {
-        height: 300px;
-        margin-top: -220px;
+        height: 440px;
+        margin-top: 0px;
+        background: rgba(3, 43, 104, 1);
+        .container_2_int {
+            flex-direction: column;
+            gap: 40px;
+
+            .area_texto {
+                p {
+                    text-align: center;
+                }
+            }
+        }
     }
 
     .container_3 {
@@ -2288,6 +2313,28 @@ footer {
         height: 60px;
     }
 
+    .area_banner_forma {
+        bottom: 3%;
+    }
+    
+    .container_2 {
+        height: 440px;
+        margin-top: 0px;
+        background: rgba(3, 43, 104, 1);
+        .container_2_int {
+            flex-direction: column;
+            gap: 60px;
+
+            .area_texto {
+                p {
+                    text-align: center;
+                    padding: 0px 20px;
+                    font-size: 1.2em;
+                }
+            }
+        }
+    }
+
     #container_1 {
         margin-top: -62px;
 
@@ -2302,8 +2349,8 @@ footer {
 
                         a {
                             position: absolute;
-                            left: 4%;
-                            bottom: 15px;
+                            left: 6%;
+                            bottom: 0px;
                             width: 100%;
                             max-width: 340px;
                         }
@@ -2327,7 +2374,7 @@ footer {
 
     .container_2 {
         height: auto;
-        margin-top: -110px;
+        margin-top: -80px;
     }
 
     .container_3 {
